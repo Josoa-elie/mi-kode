@@ -16,6 +16,7 @@
     href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/contact-illustration.css">
 </head>
 
 <body>
@@ -449,7 +450,7 @@
                 </svg></div>
               <div>
                 <div class="label">Email</div>
-                <div class="value">contact.mikode@gmail.com</div>
+                <div class="value"><a href="mailto:contact@mi-kode.mg">contact.mikode@gmail.com</a></div>
               </div>
             </div>
             <div class="info-row">
@@ -460,7 +461,17 @@
                 </svg></div>
               <div>
                 <div class="label">Téléphone</div>
-                <div class="value">+261 34 63 105 81</div>
+                <div class="value"><a href="tel:+261340000000">+261 34 63 105 81</a></div>
+              </div>
+            </div>
+            <div class="info-row">
+              <div class="info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 8h3V4h-3a5 5 0 0 0-5 5v2H6v4h3v6h4v-6h3l1-4h-4V9a1 1 0 0 1 1-1Z" />
+                </svg></div>
+              <div>
+                <div class="label">Facebook</div>
+                <div class="value"><a href="https://www.facebook.com/profile.php?id=61581281822147">Facebook</a></div>
               </div>
             </div>
             <div class="info-row">
@@ -475,67 +486,95 @@
               </div>
             </div>
           </div>
-
-          <div class="social-row" data-reveal>
-            <a href="#" class="social-icon" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="3" width="18" height="18" rx="3" />
-                <path d="M8 11v5M8 8v.01M12 16v-3.5a1.5 1.5 0 0 1 3 0V16m0 0v-5" />
-              </svg></a>
-            <a href="#" class="social-icon" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M15 8h2V4h-2a4 4 0 0 0-4 4v2H9v4h2v6h3v-6h2.5l.5-4H14V9a1 1 0 0 1 1-1Z" />
-              </svg></a>
-            <a href="#" class="social-icon" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="3" width="18" height="18" rx="5" />
-                <circle cx="12" cy="12" r="4" />
-                <circle cx="17.2" cy="6.8" r="1" />
-              </svg></a>
-          </div>
         </div>
 
-        <div class="form-card" data-reveal>
-          <form id="contactForm">
-            <div class="field-row">
-              <div class="field">
-                <label for="nom">Nom</label>
-                <input type="text" id="nom" name="nom" placeholder="Andry Rakoto" required>
+        <div class="ci-wrap" data-reveal aria-label="Illustration d'une personne qui discute par messagerie">
+          <div class="ci">
+            <div class="ci-halo" aria-hidden="true"></div>
+
+            <div class="ci-chip ci-avail"><span class="ci-dot"></span>Disponible</div>
+            <div class="ci-chip ci-shop">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#C6FF3D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1 11H6L5 8Z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg>
+              Boutique en ligne
+            </div>
+
+            <div class="ci-chat" role="group" aria-label="Conversation">
+              <div class="ci-head">
+                <div class="ci-avatar" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#0B1209" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v7a2.5 2.5 0 0 1-2.5 2.5H11l-4 4v-4H6.5A2.5 2.5 0 0 1 4 13.5v-7Z"/></svg>
+                </div>
+                <div class="ci-who"><b>Équipe Mi-Kode</b><span><i></i>En ligne, Antananarivo</span></div>
+                <div class="ci-dots" aria-hidden="true"><s></s><s></s><s></s></div>
               </div>
-              <div class="field">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="vous@gmail.com" required>
+
+              <div class="ci-thread">
+                <div class="ci-msg ci-me" data-ci="500">Bonjour, je voudrais un site web pour ma boutique. Par où commencer ?</div>
+                <div class="ci-msg ci-us" data-ci="2600">Bonjour ! Dites-nous ce que vous vendez et à qui. On revient vers vous avec les premières pistes sous 24 à 48 h.</div>
+                <div class="ci-msg ci-me" data-ci="5200">Et pour le délai et le prix ?</div>
+                <div class="ci-slot">
+                  <div class="ci-typing" data-ci="6300" data-ci-out="7700" aria-hidden="true"><span></span><span></span><span></span></div>
+                  <div class="ci-msg ci-us" data-ci="7700">Un site vitrine prend 2 à 3 semaines, à partir de 800 000 Ar. Le devis est gratuit.</div>
+                </div>
+                <div class="ci-quote" data-ci="8500">
+                  <div class="ci-doc"><svg viewBox="0 0 24 24" fill="none" stroke="#C6FF3D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h7l5 5v13H7V3Z"/><path d="M14 3v5h5M10 13h6M10 17h4"/></svg></div>
+                  <div><b>Devis gratuit</b><span>Envoyé sous 48 h</span></div>
+                </div>
+              </div>
+
+              <div class="ci-composer">Écrire un message…
+                <span class="ci-send" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#0B1209" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
               </div>
             </div>
-            <div class="field">
-              <label for="sujet">Type de projet</label>
-              <select id="sujet" name="sujet">
-                <option>Site vitrine</option>
-                <option>E-commerce</option>
-                <option>Application web</option>
-                <option>Autre</option>
-              </select>
+
+            <svg class="ci-person" viewBox="0 0 300 400" role="img" aria-label="Une cliente souriante, lunettes sur le nez, tient son téléphone et écrit à l'équipe">
+              <defs>
+                <linearGradient id="ci-hoodie" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D4FF4F"/><stop offset="1" stop-color="#6FD14B"/></linearGradient>
+                <linearGradient id="ci-screen" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1B2A1C"/><stop offset="1" stop-color="#0B120C"/></linearGradient>
+                <linearGradient id="ci-fade" x1="0" y1="0" x2="0" y2="1"><stop offset=".7" stop-color="#fff"/><stop offset="1" stop-color="#000"/></linearGradient>
+                <mask id="ci-fadeMask"><rect width="300" height="400" fill="url(#ci-fade)"/></mask>
+              </defs>
+              <g mask="url(#ci-fadeMask)">
+                <g class="ci-bob">
+                  <path d="M48 400V264Q48 214 100 200L132 192H168L200 200Q252 214 252 264V400Z" fill="url(#ci-hoodie)"/>
+                  <path d="M48 264Q48 214 100 200V400H48Z" fill="#000" opacity=".07"/>
+                  <path d="M224 236Q262 276 252 360" fill="none" stroke="#69C444" stroke-width="34" stroke-linecap="round"/>
+                  <rect x="134" y="160" width="32" height="62" rx="14" fill="#B37649"/>
+                  <path d="M104 202Q150 248 196 202" fill="none" stroke="#58B63B" stroke-width="17" stroke-linecap="round"/>
+                  <path d="M138 226v34M162 226v34" stroke="#F3FFD0" stroke-width="3" stroke-linecap="round"/>
+                  <circle cx="138" cy="262" r="3.5" fill="#F3FFD0"/><circle cx="162" cy="262" r="3.5" fill="#F3FFD0"/>
+                  <ellipse cx="107" cy="126" rx="7" ry="10" fill="#B87D52"/>
+                  <ellipse cx="193" cy="126" rx="7" ry="10" fill="#B87D52"/>
+                  <ellipse cx="150" cy="118" rx="43" ry="50" fill="#C58A5C"/>
+                  <path d="M105 114C100 66 128 52 152 52C182 52 202 70 195 114C190 92 176 82 150 82C124 82 110 92 105 114Z" fill="#1A1816"/>
+                  <circle cx="118" cy="70" r="15" fill="#1A1816"/><circle cx="146" cy="58" r="17" fill="#1A1816"/><circle cx="176" cy="66" r="16" fill="#1A1816"/>
+                  <circle cx="197" cy="88" r="11" fill="#1A1816"/><circle cx="103" cy="90" r="11" fill="#1A1816"/>
+                  <path d="M121 104Q132 98 143 103M157 103Q168 98 179 104" fill="none" stroke="#1A1816" stroke-width="3.5" stroke-linecap="round"/>
+                  <g class="ci-eyes"><ellipse cx="133" cy="124" rx="3.8" ry="5" fill="#16110E"/><ellipse cx="167" cy="124" rx="3.8" ry="5" fill="#16110E"/><circle cx="134.4" cy="122" r="1.2" fill="#fff"/><circle cx="168.4" cy="122" r="1.2" fill="#fff"/></g>
+                  <g fill="rgba(255,255,255,.12)" stroke="#0D1210" stroke-width="3"><rect x="117" y="111" width="31" height="25" rx="10"/><rect x="152" y="111" width="31" height="25" rx="10"/></g>
+                  <path d="M148 121H152M117 120L108 118M183 120L192 118" stroke="#0D1210" stroke-width="3" stroke-linecap="round" fill="none"/>
+                  <path d="M150 130Q146 142 152 145" fill="none" stroke="#9D6A43" stroke-width="2.5" stroke-linecap="round"/>
+                  <path d="M136 153Q150 166 164 153" fill="none" stroke="#5A2E1B" stroke-width="3.5" stroke-linecap="round"/>
+                  <circle cx="122" cy="148" r="8" fill="#E9806A" opacity=".16"/><circle cx="178" cy="148" r="8" fill="#E9806A" opacity=".16"/>
+                  <path d="M78 238Q46 290 74 336" fill="none" stroke="#69C444" stroke-width="34" stroke-linecap="round"/>
+                  <path d="M74 336Q94 342 112 316" fill="none" stroke="#69C444" stroke-width="30" stroke-linecap="round"/>
+                  <g transform="rotate(-8 130 262)">
+                    <rect x="104" y="212" width="54" height="96" rx="11" fill="#0B100D" stroke="#2A332D" stroke-width="2"/>
+                    <rect x="108" y="216" width="46" height="88" rx="8" fill="url(#ci-screen)"/>
+                    <rect x="113" y="226" width="26" height="10" rx="5" fill="#2A332D"/>
+                    <rect x="124" y="242" width="26" height="10" rx="5" fill="#C6FF3D"/>
+                    <rect x="113" y="258" width="20" height="10" rx="5" fill="#2A332D"/>
+                    <circle cx="120" cy="285" r="2.4" fill="#C6FF3D"/><circle cx="128" cy="285" r="2.4" fill="#C6FF3D" opacity=".6"/><circle cx="136" cy="285" r="2.4" fill="#C6FF3D" opacity=".3"/>
+                  </g>
+                  <ellipse cx="122" cy="304" rx="17" ry="14" fill="#C58A5C"/>
+                  <ellipse cx="156" cy="262" rx="6" ry="12" fill="#C58A5C" transform="rotate(-22 156 262)"/>
+                </g>
+              </g>
+            </svg>
+
+            <div class="ci-chip ci-done" data-ci="9400">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#C6FF3D" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>
+              Devis envoyé
             </div>
-            <div class="field">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" placeholder="Parlez-nous un peu de votre projet..."
-                required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary btn-block">
-              Envoyer le message
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-                <path d="M5 12h14M13 5l7 7-7 7" />
-              </svg>
-            </button>
-          </form>
-          <div class="form-success" id="formSuccess">
-            <div class="check-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
-                stroke-linecap="round" stroke-linejoin="round">
-                <path d="M20 6 9 17l-5-5" />
-              </svg></div>
-            <h3>Message envoyé !</h3>
-            <p>Merci, nous revenons vers vous sous 24 à 48h.</p>
-            <button class="btn btn-ghost" id="resetForm">Envoyer un autre message</button>
           </div>
         </div>
       </div>
@@ -550,23 +589,7 @@
           <a href="#top" class="logo"><span class="mi">Mi</span><span class="kode">-Kode</span></a>
           <p>Agence web basée à Antananarivo, Madagascar. On conçoit des sites et applications sur-mesure pour faire
             grandir votre activité en ligne.</p>
-          <div class="social-row">
-            <a href="#" class="social-icon" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="3" width="18" height="18" rx="3" />
-                <path d="M8 11v5M8 8v.01M12 16v-3.5a1.5 1.5 0 0 1 3 0V16m0 0v-5" />
-              </svg></a>
-            <a href="#" class="social-icon" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M15 8h2V4h-2a4 4 0 0 0-4 4v2H9v4h2v6h3v-6h2.5l.5-4H14V9a1 1 0 0 1 1-1Z" />
-              </svg></a>
-            <a href="#" class="social-icon" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="3" width="18" height="18" rx="5" />
-                <circle cx="12" cy="12" r="4" />
-                <circle cx="17.2" cy="6.8" r="1" />
-              </svg></a>
-          </div>
+          
         </div>
         <div class="footer-col">
           <h4>Navigation</h4>
@@ -603,6 +626,7 @@
   </footer>
 
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/contact-illustration.js"></script>
 
 </body>
 

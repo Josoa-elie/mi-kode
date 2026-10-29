@@ -32,16 +32,25 @@ const io = new IntersectionObserver((entries) => {
 }, { threshold: 0.12 });
 revealEls.forEach(el => io.observe(el));
 
-// Contact form
+// Contact form (optional: no longer rendered on this page)
 const form = document.getElementById('contactForm');
-const success = document.getElementById('formSuccess');
-form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    form.style.display = 'none';
-    success.classList.add('show');
-});
-document.getElementById('resetForm').addEventListener('click', () => {
-    form.reset();
-    form.style.display = 'block';
-    success.classList.remove('show');
-});
+if (form) {
+    const success = document.getElementById('formSuccess');
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        form.style.display = 'none';
+        if (success) {
+            success.classList.add('show');
+        }
+    });
+    const resetBtn = document.getElementById('resetForm');
+    if (resetBtn) {
+        resetBtn.addEventListener('click', () => {
+            form.reset();
+            form.style.display = 'block';
+            if (success) {
+                success.classList.remove('show');
+            }
+        });
+    }
+}
